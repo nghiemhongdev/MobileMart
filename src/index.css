@@ -1,0 +1,44 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  a:hover {
+    color: black;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply flex h-12  items-center justify-center gap-x-1 rounded bg-primary px-2 text-sm text-white;
+  }
+  .search-input {
+    @apply h-10 w-[65%] rounded-l-lg px-3 py-2 text-lg outline-none lg:w-96;
+  }
+  .card-product {
+    @apply min-h-64 cursor-pointer overflow-hidden rounded-xl shadow hover:shadow-md;
+  }
+  .card_title {
+    @apply rounded-xl bg-gradient-to-r from-black to-gray-600 px-20 py-2 font-semibold text-white;
+  }
+}
+
+.shawdow-custom {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
