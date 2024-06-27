@@ -18,7 +18,7 @@ const SliderComponent = () => {
   }, []);
   return (
     <div className="col-span-4 overflow-hidden rounded-xl shadow-md">
-      <Swiper
+      {sliders.length>0 ? <Swiper
         loop={true}
         navigation={false}
         pagination={{
@@ -39,7 +39,8 @@ const SliderComponent = () => {
             </SwiperSlide>
           );
         })}
-      </Swiper>
+      </Swiper> : <p className="text-center mt-[200px]">Loading....</p>}
+      
     </div>
   );
 };
