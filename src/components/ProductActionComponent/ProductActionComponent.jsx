@@ -16,13 +16,13 @@ const ProductActionComponent = ({ product }) => {
       // Số lượng sản phẩm trong giỏ hàng
       const quantity_product_order = orders?.orderItems
         .find((item) => item?.user_id === user?.id)
-        .products.find((item) => item?.product_id === product?.id)?.quantity;
+        ?.products.find((item) => item?.product_id === product?.id)?.quantity;
 
       if (product?.quantity > 0) {
         if (
           !orders?.orderItems
             .find((item) => item?.user_id === user?.id)
-            .products.find((item) => item?.product_id === product?.id)
+            ?.products.find((item) => item?.product_id === product?.id)
         ) {
           const orderItem = {
             user_id: user?.id,
