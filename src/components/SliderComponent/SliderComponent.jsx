@@ -39,7 +39,7 @@ const SliderComponent = () => {
             </SwiperSlide>
           );
         })}
-      </Swiper> : <p className="text-center mt-[200px]">Loading....</p>}
+      </Swiper> : <p className="text-center mt-[200px]">Vui lòng đợi 20-30s để khởi chạy server!</p>}
       
     </div>
   );
