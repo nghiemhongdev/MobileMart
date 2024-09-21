@@ -194,7 +194,7 @@ const HeaderComponent = ({ isHidenSearch, isHidenCart }) => {
           <Loading isLoading={isLoading}>
             <div className="flex gap-x-2">
               {user?.access_token ? (
-                <Popover content={content} trigger="hover">
+                <Popover content={content} trigger="click">
                   <button
                     className="btn ml-2 flex flex-col justify-center rounded-lg md:bg-[#ffffff33]"
                     onClick={handleNavigateLogin}
